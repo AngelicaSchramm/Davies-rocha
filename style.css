@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&family=Noto+Serif:wght@400;700&family=Marcellus+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.fundo-principal{
+    width: 100vw;
+    background-color: #000;
+}
+
+header{
+    width: 100vw;
+    padding: 2rem 0;
+    background-color: #fff;
+    color: #000;
+}
+
+header .container{
+    justify-content: space-between ;
+    align-items: center;
+    font-size: 2rem;
+}
+
+header img{
+    width: 20rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    position: relative;
+}
+
+.destaque{
+    padding-top: 7rem;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.destaque-text{
+    width: 65%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+h1{
+    font-size: 5.2rem;
+    color: #F5CB5C;
+    font-family: 'Noto Serif', serif;
+    
+    font-weight: 500;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.destaque-text p{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.whatsapp{
+    padding: 12px 30px;
+    background-color: #F5CB5C;
+    border: none;
+    border-radius: 7px;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.destaque-img{
+    width: 35%;
+    z-index: 2;
+    margin-bottom: -10px;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.fundo-img{
+    position: absolute;
+    bottom: -17rem;
+    right: -18rem;
+    width: 50rem;
+    height: 50rem;
+    background-color: #333533;
+    border: 2px #F5CB5C solid;
+    border-radius: 20px;
+    transform: rotate(55deg);
+}
+
+.destaque-img img{
+    width: 100%;
+}
+
+.google{
+    width: 100vw;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #333533;
+    border-top: 1px solid #fff;
+}
+
+.google .stars{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.google .stars img{
+    width: 2rem;
+}
+.google .google-text{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.area{
+    padding: 6rem 0;
+}
+
+.area .container{
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.area-text{
+    width: 50%;
+}
+
+.area-text p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+   
+}
+
+.area-img{
+    width: 25%;
+    align-content: center;
+}
+
+.area-img img{
+    width: 300px;
+    margin: auto;
+}
+
+.area h2{
+    align-self: flex-start;
+    margin-bottom: 3rem;
+}
+
+.beneficios{
+    width: 100vw;
+    padding: 6rem 0;
+}
+
+.beneficios .container{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.beneficios .beneficios-card{
+    width: 30%;
+    height: 180px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    text-align: center;
+}
+
+.beneficios .beneficios-card h3{
+    font-size: 1.6rem;
+}
+
+.beneficios .beneficios-card p{
+    font-size: 1.4rem;
+}
+
+.beneficios .beneficios-card img{
+    width: 6rem;
+}
+
+.escritorio{
+    width:100vw;
+    padding: 6rem 0;
+}
+
+.escritorio-text{
+    width: 60%;
+}
+
+.escritorio-text span{
+    font-size: 1.8rem;
+}
+
+.escritorio-text p{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.escritorio-img{
+    width: 30%;
+}
+
+.escritorio-img img{
+    width: 100%;
+    border: 4px outset #F5CB5C;
+
+}
+
+.equipe{
+    width: 100vw;
+    padding: 6rem 0;
+}
+.equipe .container{
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.equipe .equipe-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem ;
+}
+
+.equipe .equipe-container .equipe-card{
+    width: 25%;
+    height: 300px;
+    border: .5px solid rgba(0, 0, 0, 0.300);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.equipe .equipe-container #brian {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0)), url(img/Brian-Davies.jpg);
+    background-size: cover;
+    background-position: top center;
+
+}
+
+.equipe .equipe-container #cintia {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.990), rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0)), url(img/Cintia-Rocha.jpg);
+    background-size: cover;
+    background-position: top center;
+
+}
+
+.equipe .equipe-container #tainara {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.990), rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0)), url(img/Tainara-Isadora.jpg);
+    background-size: cover;
+    background-position: top center;
+
+}
+
+.fale-conosco{
+    width: 100vw;
+    padding: 6rem 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.fale-conosco .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.dados{
+    width: 100vw;
+    padding: 6rem 0;
+}
+
+.dados .container{
+    gap: 2rem;
+    justify-content: center;
+}
+
+.dados h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 100vw;
+    padding: 2rem 0;
+}
+
+footer .container{
+    justify-content: center;
+}
+
+footer img{
+    width: 20rem;
+}
+
+@media(max-width: 1400px){
+    .destaque-text{
+        margin-bottom: 6rem;
+    }
+
+    .destaque-img{
+        width: 40%;
+    }
+}
+
+
+@media(max-width:1100px){
+    html{
+        font-size: 55%;
+    }
+
+    .container{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .destaque-text{
+        width: 100%;
+    }
+
+    .destaque-text h1{
+        font-size: 4.5em;
+    }
+
+    .google{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .google .stars{
+        gap: 1.5rem;
+    }
+    .google .stars img{
+        width: 15px;
+    }
+    .google .google-text{
+        font-size: 1.2rem;
+    }
+
+    .destaque-img{
+        width: 100%;
+    }
+
+    .area .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .area-img{
+        width: 90%;
+    }
+
+    .area-img img{
+        width: 100%;
+    }
+
+    .area-text{
+        width: 100%;
+    }
+
+    .beneficios .beneficios-card{
+        width: 100%;
+    }
+
+    .escritorio-text{
+        width: 100%;
+    }
+
+    .escritorio-img{
+        width: 100%;
+    }
+
+    .equipe .equipe-container{
+        flex-wrap: wrap;
+    }
+
+    .equipe .equipe-container .equipe-card{
+        width: 100%;
+    }
+
+    .location iframe{
+        width: 100%;
+    }
+
+    .insta{
+        width: 100%;
+    }
+
+    .insta div{
+        width: 100%;
+    }
+
+    .insta div blockquote{
+        width: 100%;
+    }
+}
