@@ -185,7 +185,7 @@ h2{
 
 .beneficios{
     width: 100vw;
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .beneficios .container{
@@ -365,6 +365,8 @@ footer img{
 
     .destaque-text{
         width: 100%;
+        align-items: center;
+        text-align: center;
     }
 
     .destaque-text h1{
@@ -406,6 +408,7 @@ footer img{
 
     .area-text{
         width: 100%;
+        text-align: center;
     }
 
     .beneficios .beneficios-card{
@@ -413,6 +416,7 @@ footer img{
     }
 
     .escritorio-text{
+        text-align: center;
         width: 100%;
     }
 
@@ -428,6 +432,10 @@ footer img{
         width: 100%;
     }
 
+    .fale-conosco{
+        text-align: center;
+    }
+
     .location iframe{
         width: 100%;
     }
@@ -438,6 +446,10 @@ footer img{
 
     .insta div{
         width: 100%;
+    }
+    
+    .insta iframe{
+        min-width: 150px;
     }
 
     .insta div blockquote{
