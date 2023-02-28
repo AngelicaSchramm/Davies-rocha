@@ -275,6 +275,7 @@ h2{
 
 .images-grid img{
     height: 100%;
+    width: 100%;
 }
 
 .image1{
@@ -496,6 +497,10 @@ footer img{
         width: 100%;
     }
 
+    .atendimento h2{
+        text-align: center;
+    }
+
     .escritorio-img{
         width: 100%;
     }
@@ -530,5 +535,15 @@ footer img{
 
     .insta div blockquote{
         width: 100%;
+    }
+}
+
+
+@media (max-width: 460px){
+    .images-grid{
+        width: 90%;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-rows: 110px 110px;
+       
     }
 }
