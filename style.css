@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&family=Noto+Serif:wght@400;700&family=Marcellus+SC&display=swap');
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,24 +18,26 @@ html{
 
 .fundo-principal{
     width: 100vw;
-    background-color: #000;
+    background-color: #fff;
+  
 }
 
 header{
     width: 100vw;
-    padding: 2rem 0;
     background-color: #fff;
     color: #000;
 }
 
 header .container{
+    padding: 1rem 0;
     justify-content: space-between ;
     align-items: center;
     font-size: 2rem;
+    border-bottom: 1px solid #660708;
 }
 
 header img{
-    width: 20rem;
+    width: 22rem;
 }
 
 a{
@@ -54,33 +61,36 @@ a:hover{
 }
 
 .destaque{
-    padding-top: 7rem;
     width: 100vw;
-    overflow: hidden;
+    padding: 7rem 0;
+}
+
+.destaque .container{
+    justify-content: space-around;
 }
 
 
 .destaque-text{
-    width: 65%;
-    z-index: 2;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 4rem;
+    align-items: start;
+    gap: 7rem;
+    text-align: start;
 }
 
 h1{
     font-size: 5.2rem;
-    color: #F5CB5C;
-    font-family: 'Noto Serif', serif;
+    color: #000;
     
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h2{
     font-size: 3rem;
     font-weight: 700;
 }
+
 
 .destaque-text p{
     font-size: 2rem;
@@ -89,37 +99,26 @@ h2{
 
 .whatsapp{
     padding: 12px 30px;
-    background-color: #F5CB5C;
+    background-color: #386641;
     border: none;
     border-radius: 7px;
-    color: #000;
+    color: #fff;
     font-size: 1.6rem;
     font-weight: 700;
 }
 
 .destaque-img{
-    width: 35%;
-    z-index: 2;
-    margin-bottom: -10px;
-    justify-self: flex-end;
-    align-self: flex-end;
+    position: relative;
+    width: 30%;
 }
 
-.fundo-img{
-    position: absolute;
-    bottom: -17rem;
-    right: -18rem;
-    width: 50rem;
-    height: 50rem;
-    background-color: #333533;
-    border: 2px #F5CB5C solid;
-    border-radius: 20px;
-    transform: rotate(55deg);
-}
 
 .destaque-img img{
-    width: 100%;
+    width: 350px;
+    margin-top: -20px;
 }
+
+
 
 .google{
     width: 100vw;
@@ -127,7 +126,7 @@ h2{
     display: flex;
     justify-content: center;
     gap: 1rem;
-    background-color: #333533;
+    background-color: #386641;
     border-top: 1px solid #fff;
 }
 
@@ -145,6 +144,14 @@ h2{
     color: #fff;
     font-size: 1.6rem;
     font-weight: 400;
+}
+
+.line{
+    width: 200px;
+    height: 2px;
+    background-color: #660708;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
 .area{
@@ -180,7 +187,10 @@ h2{
 
 .area h2{
     align-self: flex-start;
-    margin-bottom: 3rem;
+}
+
+.area p{
+    margin-top: 3rem;
 }
 
 .beneficios{
@@ -194,30 +204,30 @@ h2{
 }
 
 .beneficios .beneficios-card{
-    width: 30%;
-    height: 180px;
-    background-color: #000;
-    color: #fff;
+    width: 33%;
+    color: #000;
     padding: 20px;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
-    text-align: center;
+    gap: 2rem;
+    
+}
+
+.beneficios-card img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #660708;
 }
 
 .beneficios .beneficios-card h3{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .beneficios .beneficios-card p{
-    font-size: 1.4rem;
-}
+    font-size: 1.6rem;
 
-.beneficios .beneficios-card img{
-    width: 6rem;
 }
 
 .escritorio{
@@ -228,6 +238,7 @@ h2{
 .escritorio .container{
     align-items: center;
 }
+
 
 .escritorio-text{
     width: 60%;
@@ -245,13 +256,63 @@ h2{
 }
 
 .escritorio-img{
-    width: 30%;
+    width: 50%;
 }
 
-.escritorio-img img{
-    max-height: 280px;
-    border: 4px outset #F5CB5C;
+.images-grid{
+    width: 400px;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: 160px 160px;
+    grid-template-areas:
+     "image1 image2 "
+     "image1 image3";
+     gap: 10px;
+}
 
+.images-grid img{
+    height: 100%;
+}
+
+.image1{
+    grid-area: image1;
+}
+
+.image2{
+    grid-area: image2;
+}
+
+.image3{
+    grid-area: image3;
+}
+
+
+.atendimento{
+    width: 100vw;
+    padding: 6rem 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right(50px);
+    background:  linear-gradient(#66070967, #66070970) , url(img/brasil.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.atendimento p{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center
+}
+
+.atendimento .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.atendimento .whatsapp{
+    background-color: #000;
 }
 
 .equipe{
@@ -306,7 +367,7 @@ h2{
 
 .fale-conosco{
     width: 100vw;
-    padding: 6rem 0;
+    padding: 8rem 0;
     background-color: #000;
     color: #fff;
 }
@@ -316,6 +377,10 @@ h2{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.fale-conosco .whatsapp{
+    background-color: #660708;
 }
 
 .dados{
