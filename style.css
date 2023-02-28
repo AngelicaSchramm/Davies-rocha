@@ -108,8 +108,9 @@ h2{
 }
 
 .destaque-img{
-    position: relative;
     width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -257,6 +258,8 @@ h2{
 
 .escritorio-img{
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .images-grid{
@@ -440,6 +443,10 @@ footer img{
 
     .destaque-text h1{
         font-size: 4.5em;
+    }
+
+    .destaque-img img{
+        width: 70%;
     }
 
     .google{
